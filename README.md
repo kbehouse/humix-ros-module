@@ -55,5 +55,8 @@ roslaunch manipulator_h_gazebo manipulator_h_gazebo.launch
 rosrun manipulator_h_gui manipulator_h_gui  
 ```
 
+* Open Humix
+http://localhost:3000
+
 
 

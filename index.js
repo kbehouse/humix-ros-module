@@ -74,8 +74,7 @@ humix.on('connection', function(humixSensorModule){
     }
 
     logger.info('loading config: '+ JSON.stringify(conf));
-    //conversation = new Conv(conf, logger)
-   // conversation.init();
+
 
     logger.info('Communication with humix-sense is now ready.');
 
@@ -83,16 +82,7 @@ humix.on('connection', function(humixSensorModule){
         logger.info('received robot_cmd data:'+data);
 
         call_robot_cmd(data);
-        // TODO : Check the type of data.
-        //conversation.say(data);
     })
 
-    // conversation.on('msg', function(msg) {
-    //     logger.debug('about to publish:' + msg);
-
-    //     if(hsm){
-    //         hsm.event('stt', msg);
-    //     }
-    // });
 
 });
