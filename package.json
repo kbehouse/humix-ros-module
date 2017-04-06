@@ -1,0 +1,26 @@
+{
+  "name": "humix-ros-module",
+  "version": "0.0.1",
+  "description": "humix-ros-module",
+  "main": "server",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "humix",
+    "nodered",
+    "ros"
+  ],
+  "author": "Kartik, Chen <kbehouse@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "humix-logger": "^1.0.4",
+    "humix-sense": "^1.0.0",
+    "rosnodejs": "^2.0.1",
+    "path": "^0.12.7"
+
+  },
+  "engines": {
+    "node": ">=4.2"
+  }
+}
