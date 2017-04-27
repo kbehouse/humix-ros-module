@@ -52,4 +52,8 @@ npm start
 http://localhost:3000
 
 
+## Video
+
+<a href="https://youtu.be/aLF1cb5rmuk" target="_blank"><img src="http://img.youtube.com/vi/aLF1cb5rmuk/0.jpg" 
+alt="Humix for ROS" width="480" height="360" border="10" /></a>
 
