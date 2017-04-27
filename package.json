@@ -1,6 +1,6 @@
 {
   "name": "humix-ros-module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "humix-ros-module",
   "main": "server",
   "scripts": {
