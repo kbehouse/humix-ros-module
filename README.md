@@ -8,6 +8,10 @@ https://github.com/project-humix/humix-think
 
 https://github.com/project-humix/humix-sense
 
+Install Humix Guide:
+
+https://hackpad.com/Humix-Installation-Guide-yIkJDZZRGof
+
 Install ROS version "kinetic":
 
 http://wiki.ros.org/kinetic/Installation 
@@ -22,26 +26,17 @@ git clone git@github.com:kbehouse/humix-ros-module.git
 cd humix-ros-module
 npm install
 ```
-* Install  ROBOTIS-MANIPULATOR-H for ROS simulator
-
-http://wiki.ros.org/ROBOTIS-MANIPULATOR-H
-
-
 
 
 ## Start module
 
-
 * Start ROS (for this example)
 ```
-#start manipulator_h_manager
-roslaunch manipulator_h_manager manipulator_h_manager.launch en_sim:=true
+# ROS core
+roscore
 
-#rember click start button
-roslaunch manipulator_h_gazebo manipulator_h_gazebo.launch 
-
-#rember click Set Mode button
-rosrun manipulator_h_gui manipulator_h_gui  
+# turtlebot  (Default install in ROS)
+rosrun turtlesim turtlesim_node
 ```
 
 * Start Humix
@@ -58,7 +53,6 @@ npm start
 cd ~/humix/humix-ros-module
 npm start
 ```
-
 
 * Open Humix
 http://localhost:3000
