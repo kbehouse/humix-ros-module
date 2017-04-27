@@ -38,37 +38,12 @@ rosnodejs.initNode('/humix', {onTheFly: true}).then((rosNode) => {
 });
 
 
-/*
-function call_robot_cmd(i_cmd){
-  const RobotCommand = rosnodejs.require('arc_ui').srv.RobotCommand;
-  const robot_cmd_request = new RobotCommand.Request({
-    cmd: i_cmd
-  });
-
-  let serviceClient = ros.serviceClient("/robot_cmd",
-                                             "arc_ui/RobotCommand");
-
-  ros.waitForService(serviceClient.getService(), 2000)
-    .then((available) => {
-      if (available) {
-        serviceClient.call(robot_cmd_request, (resp) => {
-          console.log('Service response ' + JSON.stringify(resp));
-        });
-      } else {
-        console.log('Service not available');
-      }
-    });
-
-}*/
-
 
 function call_robot_cmd(i_cmd){
     const msg = new geometry_msgs.Twist();
 
     JSON.parse(i_cmd, function (key, value) {
-        l('key='+key);
-        l('value='+value);
-        
+
         if (key == "x") {
             msg.linear.x = value;
         } else if(key == "yaw") {
@@ -76,10 +51,7 @@ function call_robot_cmd(i_cmd){
         }
     });
     
-
     l('i_cmd='+i_cmd+', x='+msg.linear.x + ', yaw='+msg.angular.z);
-    
-    
     
     pub.publish(msg);
 }
@@ -108,7 +80,6 @@ humix.on('connection', function(humixSensorModule){
     }
 
     logger.info('loading config: '+ JSON.stringify(conf));
-
 
     logger.info('Communication with humix-sense is now ready.');
 
