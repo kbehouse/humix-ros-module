@@ -1,8 +1,9 @@
 var HumixSense = require('humix-sense');
-var Conv = require('./index');
-var fs = require('fs');
 var rosnodejs = require('rosnodejs');
 const geometry_msgs = rosnodejs.require('geometry_msgs').msg;
+
+var fs = require('fs');
+
 
 var config = {
     "moduleName" : "humix-ros-module",

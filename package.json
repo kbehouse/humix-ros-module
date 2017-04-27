@@ -9,16 +9,19 @@
   "keywords": [
     "humix",
     "nodered",
-    "ros"
+    "ros",
+    "robot"
   ],
   "author": "Kartik, Chen <kbehouse@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "humix-logger": "^1.0.4",
     "humix-sense": "^1.0.0",
-    "rosnodejs": "^2.0.1",
-    "path": "^0.12.7"
-
+    "rosnodejs": "^2.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kbehouse/humix-ros-module.git"
   },
   "engines": {
     "node": ">=4.2"
