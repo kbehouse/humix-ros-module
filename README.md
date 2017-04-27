@@ -2,17 +2,11 @@
 
 ROS module for Humix 
 
-You shoule install the following packages for humix:
-
-https://github.com/project-humix/humix-think
-
-https://github.com/project-humix/humix-sense
-
-Install Humix Guide:
+First, install humix-think & humix-sense, install Humix Guide:
 
 https://hackpad.com/Humix-Installation-Guide-yIkJDZZRGof
 
-Install ROS version "kinetic":
+Second, install ROS version "kinetic":
 
 http://wiki.ros.org/kinetic/Installation 
 
